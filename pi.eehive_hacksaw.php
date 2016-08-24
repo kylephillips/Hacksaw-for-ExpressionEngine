@@ -1,16 +1,6 @@
 <?php
 
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
-$plugin_info = array(
-  'pi_name' => 'EE Hive Hacksaw',
-  'pi_version' => '1.07',
-  'pi_author' => 'EE Hive - Brett DeWoody',
-  'pi_author_url' => 'http://www.ee-hive.com/add-ons/hacksaw',
-  'pi_description' => 'Allows you to create excerpts of your entries by removing HTML tags and limited the excerpt by character count, word count or a specific marker you insert into your content.',
-  'pi_usage' => Eehive_hacksaw::usage()
-  );
-
 /**
  * Buzzsaw Class
  *
@@ -24,7 +14,8 @@ $plugin_info = array(
 class Eehive_hacksaw
 {
 
-var $return_data = "";
+	public $return_data = "";
+
 
 	// --------------------------------------------------------------------
 
